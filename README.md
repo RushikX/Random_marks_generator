@@ -24,3 +24,8 @@ git clone https://github.com/RushikX/Random_marks_generator/
 ```bash
 pip install -r requirements.txt
 ```
+### 3.Run the Streamlit app
+```bash
+python -m streamlit run app.py
+```
+The app will be accessible at http://localhost:8501 in your web browser.
