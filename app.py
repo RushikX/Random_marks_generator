@@ -48,7 +48,7 @@ def process_excel(file, num_questions, max_mark_per_question):
 
     # Add columns for each question's marks
     for q in range(1, num_questions + 1):
-        df[f"Q{q}_marks"] = None
+        df[f"q{q}"] = None
 
     # Generate random marks for each student
     for index, row in df.iterrows():
