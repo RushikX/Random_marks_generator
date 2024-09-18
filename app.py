@@ -59,7 +59,7 @@ def process_excel(file, num_questions, max_mark_per_question):
 
         # Update the DataFrame with random marks for each question
         for q in range(1, num_questions + 1):
-            df.at[index, f"Q{q}_marks"] = random_marks[q - 1]
+            df.at[index, f"q{q}"] = random_marks[q - 1]
 
     return df
 
