@@ -71,7 +71,7 @@ st.markdown(
     """
 ### Instructions
 
-1. **Upload an Excel File**: Excel file must have the following column(check spelling of column)
+1. **Upload an Excel File**: Excel file must have the following column
    - `marks`: The total marks scored by the student.
 
    **Example:**
