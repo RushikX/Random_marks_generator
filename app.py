@@ -65,7 +65,7 @@ def process_excel(file, num_questions, max_mark_per_question):
 
 
 # Streamlit App Interface
-st.title("Rubric-Based Exam Mark Generator")
+st.title("Automated Exam Marks Generator")
 
 st.markdown(
     """
@@ -87,7 +87,7 @@ st.markdown(
 )
 
 # File uploader
-uploaded_file = st.file_uploader("Upload Excel file", type=["xlsx"])
+uploaded_file = st.file_uploader("Upload file", type=["xlsx", "csv"])
 
 # User inputs
 num_questions = st.number_input("Enter number of questions", min_value=1, value=5)
