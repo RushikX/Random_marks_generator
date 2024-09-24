@@ -39,10 +39,10 @@ def process_excel(file, num_questions, max_mark_per_question):
     df = pd.read_excel(file)
 
     # Ensure the required columns are present
-    required_columns = {"name", "reg no", "marks"}
+    required_columns = {"marks"}
     if not required_columns.issubset(df.columns.str.lower()):
         st.error(
-            "Excel sheet must contain the following columns: 'name', 'reg no', 'marks'."
+            "Excel sheet must contain 'marks' column"
         )
         return None
 
@@ -71,9 +71,7 @@ st.markdown(
     """
 ### Instructions
 
-1. **Upload an Excel File**: The Excel file have the following columns(check spelling of column names):
-   - `name`: The student's name.
-   - `reg no`: The student's registration number.
+1. **Upload an Excel File**: Excel file must have the following column(check spelling of column)
    - `marks`: The total marks scored by the student.
 
    **Example:**
